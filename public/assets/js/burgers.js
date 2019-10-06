@@ -2,10 +2,13 @@
 $(function() {
     $(".create-form").on("submit", function(event) {
      event.preventDefault();
-
+      console.log("submit")
+     
       const newBurger= {
         burger_name: $("#newburger")
-      
+          .val()
+          .trim(),
+          devoured:0
       };
   
       // Send the PUT request.
