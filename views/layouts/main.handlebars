@@ -7,10 +7,51 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<script src="/assets/js/burgers.js"></script>
+		<script src="/assets/js/burger.js"></script>
 		
 	</head>
 	<body>
-		{{{ body }}}
+		<div class="container">
+    <div class="jumbotron p-0 py-5">
+        <h1 class="text-center mb-5 text-danger">Eat-Da-Burger! </h1>
+        <img src="/assets/images/hamburger.png" alt="" style="width:200px" class="rounded mx-auto d-block">
+        <br>
+        <div>
+            <form class="create-form text-center">
+                <div class="form-group ">
+                    <div class="form-group col-md-6 mx-auto">
+                        <label for="newburger" class="d-block"><p class="lead">Type in your Burger</p></label>
+                        <input type="text" id="newburger" name="burger" class="form-control" required>
+                        <button type="submit" class="btn btn-sm btn-light d-inline-block text-center mt-2">Add a Burger</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+                <div class="pl-0 ml-5">
+                    <span class="d-inline">
+                        <p class="lead"> 6 - hamburger</p>
+                        <button type="button" class="eatburger btn btn-warning" data-id="6"
+                            data-newDevoured="">DEVOUR IT</button>
+                        <br>
+                        <br>
+                    </span>
+                </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="pl-5 ml-5">
+                    <span>
+                        <p class="lead"> 1 - Fish Burger</p>
+                        <p class="lead"> 2 - Steak Burger</p>
+                        <p class="lead"> 3 - Hamburger</p>
+                        <p class="lead"> 4 - Beef Burger</p>
+                        <p class="lead"> 5 - Mushroom Burger/p>
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
 	</body>
 </html>
